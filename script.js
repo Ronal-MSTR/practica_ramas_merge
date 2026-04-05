@@ -13,6 +13,7 @@ function agregarALaPantalla(value) {
   }
   
   function deshacer(){
-    const valorpantalla = document.getElementById('pantalla').value;
-    document.getElementById('pantalla').value = valorpantalla.slice(0,-1)
+    const valorpantalla=document.getElementById('pantalla').value;
+    const resultado=valorpantalla.substring(0,valorpantalla.length -1);
+    document.getElementById('pantalla').value = resultado;
   }
